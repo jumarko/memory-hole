@@ -1,0 +1,11 @@
+{:profiles/dev
+ {:env
+  {:database-url "postgresql://localhost/memoryhole?user=memoryhole&password=memoryhole"
+  ;;optional, will use internal table otherwise
+  #_#_:ldap
+  {:host
+     {:address         "my-ldap-server.ca"
+      :domain          "domain.ca"
+      :port            389
+      :connect-timeout (* 1000 5)
+      :timeout         (* 1000 30)}}}}}
